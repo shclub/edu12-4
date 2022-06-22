@@ -1,0 +1,51 @@
+edu12-4 22:46:37.856 INFO  com.kt.edu.thirdproject.ThirdprojectApplication : - Starting ThirdprojectApplication using Java 17.0.2 on jake-MacBookAir with PID 85623 (/Users/jakelee/Downloads/edu12-4/target/classes started by jakelee in /Users/jakelee/Downloads/edu12-4) 
+edu12-4 22:46:37.860 DEBUG com.kt.edu.thirdproject.ThirdprojectApplication : - Running with Spring Boot v2.6.3, Spring v5.3.15 
+edu12-4 22:46:37.861 INFO  com.kt.edu.thirdproject.ThirdprojectApplication : - The following profiles are active: local 
+edu12-4 22:46:37.898 INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+edu12-4 22:46:37.898 INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+edu12-4 22:46:38.425 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : - Bootstrapping Spring Data JDBC repositories in DEFAULT mode. 
+edu12-4 22:46:38.454 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : - Finished Spring Data repository scanning in 27 ms. Found 1 JDBC repository interfaces. 
+edu12-4 22:46:38.564 INFO  com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor : - Post-processing PropertySource instances 
+edu12-4 22:46:38.592 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy 
+edu12-4 22:46:38.592 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper 
+edu12-4 22:46:38.592 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper 
+edu12-4 22:46:38.592 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper 
+edu12-4 22:46:38.592 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper 
+edu12-4 22:46:38.593 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper 
+edu12-4 22:46:38.593 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource Config resource 'class path resource [application-local.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper 
+edu12-4 22:46:38.593 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper 
+edu12-4 22:46:38.593 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource devtools [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper 
+edu12-4 22:46:38.606 INFO  com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter : - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter 
+edu12-4 22:46:38.713 INFO  com.ulisesbocchio.jasyptspringboot.resolver.DefaultLazyPropertyResolver : - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver 
+edu12-4 22:46:38.715 INFO  com.ulisesbocchio.jasyptspringboot.detector.DefaultLazyPropertyDetector : - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector 
+edu12-4 22:46:38.891 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : - Tomcat initialized with port(s): 8080 (http) 
+edu12-4 22:46:38.894 INFO  org.apache.coyote.http11.Http11NioProtocol : - Initializing ProtocolHandler ["http-nio-8080"] 
+edu12-4 22:46:38.895 INFO  org.apache.catalina.core.StandardService : - Starting service [Tomcat] 
+edu12-4 22:46:38.895 INFO  org.apache.catalina.core.StandardEngine : - Starting Servlet engine: [Apache Tomcat/9.0.56] 
+edu12-4 22:46:38.922 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : - Initializing Spring embedded WebApplicationContext 
+edu12-4 22:46:38.922 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : - Root WebApplicationContext: initialization completed in 1024 ms 
+edu12-4 22:46:38.975 INFO  com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor : - Found Custom Encryptor Bean org.jasypt.encryption.pbe.StandardPBEStringEncryptor@73484b64 with name: jasyptStringEncryptor 
+edu12-4 22:46:39.012 INFO  com.zaxxer.hikari.HikariDataSource : - hikari-cp - Starting... 
+edu12-4 22:46:39.081 INFO  com.zaxxer.hikari.HikariDataSource : - hikari-cp - Start completed. 
+edu12-4 22:46:39.087 INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration : - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb' 
+edu12-4 22:46:39.198 DEBUG com.kt.edu.thirdproject.common.config.JwtRequestFilter : - Filter 'jwtRequestFilter' configured for use 
+edu12-4 22:46:39.268 INFO  jdbc.sqltiming : - create sequence hibernate_sequence\n {executed in 0 msec} 
+edu12-4 22:46:39.269 INFO  jdbc.sqltiming : - create table employee ( id long not null, empName varchar(255), empDeptName varchar(255), empTelNo varchar(20), empMail varchar(25) )\n {executed in 1 msec} 
+edu12-4 22:46:39.270 INFO  jdbc.sqltiming : - alter table employee add constraint employee_pk primary key (id)\n {executed in 1 msec} 
+edu12-4 22:46:39.344 INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : - LiveReload server is running on port 35729 
+edu12-4 22:46:39.408 INFO  org.springframework.security.web.DefaultSecurityFilterChain : - Will secure Ant [pattern='/resources/**'] with [] 
+edu12-4 22:46:39.408 INFO  org.springframework.security.web.DefaultSecurityFilterChain : - Will secure Ant [pattern='/css/**'] with [] 
+edu12-4 22:46:39.408 INFO  org.springframework.security.web.DefaultSecurityFilterChain : - Will secure Ant [pattern='/vendor/**'] with [] 
+edu12-4 22:46:39.408 INFO  org.springframework.security.web.DefaultSecurityFilterChain : - Will secure Ant [pattern='/js/**'] with [] 
+edu12-4 22:46:39.408 INFO  org.springframework.security.web.DefaultSecurityFilterChain : - Will secure Ant [pattern='/favicon*/**'] with [] 
+edu12-4 22:46:39.409 INFO  org.springframework.security.web.DefaultSecurityFilterChain : - Will secure Ant [pattern='/img/**'] with [] 
+edu12-4 22:46:39.428 INFO  org.springframework.security.web.DefaultSecurityFilterChain : - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@464b4e68, org.springframework.security.web.context.SecurityContextPersistenceFilter@3a4b708a, org.springframework.security.web.header.HeaderWriterFilter@72977812, org.springframework.web.filter.CorsFilter@1f963395, org.springframework.security.web.authentication.logout.LogoutFilter@2fe99c46, com.kt.edu.thirdproject.common.config.JwtRequestFilter@39bc0834, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4bccec77, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@43fcf697, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@46e55146, org.springframework.security.web.session.SessionManagementFilter@5cc8796a, org.springframework.security.web.access.ExceptionTranslationFilter@5845746, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2f4ec955] 
+edu12-4 22:46:39.823 INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver : - Exposing 1 endpoint(s) beneath base path '/actuator' 
+edu12-4 22:46:39.852 INFO  org.apache.coyote.http11.Http11NioProtocol : - Starting ProtocolHandler ["http-nio-8080"] 
+edu12-4 22:46:39.858 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : - Tomcat started on port(s): 8080 (http) with context path '' 
+edu12-4 22:46:39.867 INFO  com.kt.edu.thirdproject.ThirdprojectApplication : - Started ThirdprojectApplication in 2.234 seconds (JVM running for 2.747) 
+edu12-4 22:46:40.354 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+edu12-4 22:46:40.355 INFO  org.springframework.web.servlet.DispatcherServlet : - Initializing Servlet 'dispatcherServlet' 
+edu12-4 22:46:40.356 INFO  org.springframework.web.servlet.DispatcherServlet : - Completed initialization in 1 ms 
+edu12-4 22:46:46.634 INFO  com.zaxxer.hikari.HikariDataSource : - hikari-cp - Shutdown initiated... 
+edu12-4 22:46:46.634 INFO  com.zaxxer.hikari.HikariDataSource : - hikari-cp - Shutdown completed. 
