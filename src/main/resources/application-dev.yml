@@ -1,0 +1,51 @@
+##############
+### dev
+##############
+server:
+  port: 8080
+  servlet:
+    context-path: /
+  tomcat:
+    connection-timeout: 5s
+    max-connections: 1000
+    accept-count: 20
+    threads:
+      max: 200
+spring:
+  h2:
+    # h2 DB
+    console:
+      enabled: true
+      path: /h2-console
+  # Database Platform
+  sql:
+    init:
+      platform: h2
+      mode: embedded
+  datasource:
+    driverClassName: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+    url: jdbc:log4jdbc:h2:mem:testdb;IGNORECASE=TRUE #jdbc:log4jdbc:tibero:thin:@localhost:8640:POCICISORDDB
+    username: sa
+    password: ENC(hk5/B+52K9XaD+BqzpFaHQ==)
+    # h2 DB
+    generate-unique-name: false
+    hikari:
+      pool-name: hikari-cp
+      maximum-pool-size: 30
+      minimum-idle: 2
+      data-source-properties:
+        cachePrepStmts: true
+        prepStmtCacheSize: 250
+        prepStmtCacheSqlLimit: 2048
+        useServerPrepStmts: true
+
+springdoc:
+  swagger-ui:
+    operations-sorter: alpha
+    tags-sorter: alpha
+    disable-swagger-default-url: true
+    doc-expansion: none
+
+logging:
+  level:
+    com.kt.edu: trace

@@ -1,0 +1,72 @@
+server:
+  tomcat:
+    url-encoding: UTF-8
+  servlet:
+    context-path: /
+spring:
+  application:
+    name: edu-spring-data-jdbc
+  profiles:
+    active: local
+  banner:
+    location: "classpath:banner.txt"
+# cache 사용을 위해 cache name 설정
+  cache:
+    cache-names: employee
+# 스프링 부트 2.0 - client 인증 정보만 입력하며 1.5에서 직접 입력한 값이 enum으로 대체
+#  security:
+#    oauth2:
+#      client:
+#        clientId: 인증정보
+#        clientSecret: 인증정보
+# logging
+logging:
+  config: classpath:log4j2.xml
+
+# actuator
+#management:
+    #  endpoints:
+    #    web:
+    #      exposure:
+  #        include: "*"
+    #  endpoint:
+    #   shutdown:
+    #     enabled: true
+    #   health:
+  # show-details: always
+
+#jasypt encryptor
+jasypt:
+  encryptor:
+    bean: jasyptStringEncryptor
+
+# spring boot - actuator expose
+management:
+  endpoint:
+    health:
+      show-details: always
+    loggers:
+      enabled: true
+    web:
+      exposure:
+        include: health,prometheus,loggers,metrics,caches
+
+jwt:
+  secret: edujwt
+
+# app
+app-info:
+  app-name: "edu-spring-data-jdbc"
+  title: "Caravan Edu API"
+  build:
+    version: '@project.version@'
+    timestamp: '@app.build.timestamp@'
+  user-id: "jakelee"
+  org-id: "my-home"
+  desc: "EDU 관련 설명입니다."
+  doc-url: "https://github.com/shclub/edu/"
+  license: "Apache License"
+  license_url: "https://github.com/shclub/edu/"
+  version: "@app.build.timestamp@"
+  doc-desc: "기타정보"
+
