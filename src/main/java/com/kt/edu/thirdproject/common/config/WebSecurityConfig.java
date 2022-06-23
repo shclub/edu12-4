@@ -106,7 +106,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                         "/api/login",
                         "/login",
                         "/h2-console/*"
-                        //"/verify",
                         //"/signin"
                 ).permitAll()
 

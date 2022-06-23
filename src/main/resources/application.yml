@@ -13,27 +13,18 @@ spring:
 # cache 사용을 위해 cache name 설정
   cache:
     cache-names: employee
-# 스프링 부트 2.0 - client 인증 정보만 입력하며 1.5에서 직접 입력한 값이 enum으로 대체
 #  security:
-#    oauth2:
+#    user:
+#      name: admin
+#      password: admin
+#  boot:
+#    admin:
 #      client:
-#        clientId: 인증정보
-#        clientSecret: 인증정보
+#        url: http://localhost:8080
+
 # logging
 logging:
   config: classpath:log4j2.xml
-
-# actuator
-#management:
-    #  endpoints:
-    #    web:
-    #      exposure:
-  #        include: "*"
-    #  endpoint:
-    #   shutdown:
-    #     enabled: true
-    #   health:
-  # show-details: always
 
 #jasypt encryptor
 jasypt:
