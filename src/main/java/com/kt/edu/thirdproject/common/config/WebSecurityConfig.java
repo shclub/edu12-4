@@ -88,7 +88,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
 
-    //APPDU
     @Override
     protected void configure(HttpSecurity httpSecurity) throws Exception {
         httpSecurity.cors().configurationSource(request -> new CorsConfiguration().applyPermitDefaultValues());
@@ -105,8 +104,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                         "/swagger-ui/**",
                         "/api/login",
                         "/login",
+                        "*",
                         "/h2-console/*"
-                        //"/signin"
                 ).permitAll()
 
                 // all other requests need to be authenticated
@@ -125,39 +124,4 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         httpSecurity.addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class);
 
     }
-    /*@Bean
-    public HttpFirewall customHttpFirewall(){
-        StrictHttpFirewall firewall = new StrictHttpFirewall();
-        firewall.setAllowedHttpMethods(Arrays.asList("GET","POST","OPTIONS","PUT","DELETE","PATCH"));
-        firewall.setUnsafeAllowAnyHttpMethod(true);
-        return firewall;
-    }*/
-    // 기존 소스
-    /*@Override
-    protected void configure(HttpSecurity httpSecurity) throws Exception {
-        //default 값 사용안한다.  Get , Post 만 가능
-        //httpSecurity.cors().configurationSource(request -> new CorsConfiguration().applyPermitDefaultValues());
-        // We don't need CSRF for this example
-        httpSecurity.csrf().disable()
-                .cors().and()
-                // dont authenticate this particular request
-                .authorizeRequests().antMatchers(
-                        "/api/login",
-                        "/h2-console/**",
-                        "/",
-                        "/actuator/**",
-                        "/v3/api-docs/**",
-                        "/swagger-ui.html",
-                        "/swagger-ui/**"
-                        ).permitAll()
-                // all other requests need to be authenticated
-                .anyRequest().authenticated().and().
-                // make sure we use stateless session; session won't be used to
-                // store user's state.
-                        exceptionHandling().authenticationEntryPoint(jwtAuthenticationEntryPoint).and().sessionManagement()
-                .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
-
-        // Add a filter to validate the tokens with every request
-        httpSecurity.addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class);
-    }*/
 }

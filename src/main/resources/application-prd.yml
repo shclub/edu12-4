@@ -1,0 +1,42 @@
+##############
+### prd
+##############
+server:
+  port: 8080
+  servlet:
+    context-path: /
+  tomcat:
+    connection-timeout: 5s
+    max-connections: 1000
+    accept-count: 20
+    threads:
+      max: 200
+spring:
+  datasource:
+    platform: mariadb
+    #driverClassName: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+    driverClassName: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://211.34.231.84:30357/edu
+    username: edu
+    #password: caravan
+    password: ENC(hk5/B+52K9XaD+BqzpFaHQ==)
+#    hikari:
+#      pool-name: hikari-cp
+#      maximum-pool-size: 30
+#      minimum-idle: 2
+#      data-source-properties:
+#        cachePrepStmts: true
+#        prepStmtCacheSize: 250
+#        prepStmtCacheSqlLimit: 2048
+#        useServerPrepStmts: true
+
+springdoc:
+  swagger-ui:
+    operations-sorter: alpha
+    tags-sorter: alpha
+    disable-swagger-default-url: true
+    doc-expansion: none
+
+logging:
+  level:
+    com.kt.edu: trace

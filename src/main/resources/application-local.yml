@@ -31,6 +31,19 @@ spring:
         prepStmtCacheSqlLimit: 2048
         useServerPrepStmts: true
 
+# spring boot - actuator expose
+management:
+  endpoints:
+    health:
+      show-details: always
+    loggers:
+      enabled: true
+    prometheus:
+      enabled: true
+    web:
+      exposure:
+        include: health,prometheus,loggers,metrics,caches,beans
+#        include: "*"
 
 # app
 app-info:
@@ -48,4 +61,5 @@ springdoc:
 
 logging:
   level:
+    org.springframework: info
     com.kt.edu: trace

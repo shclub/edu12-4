@@ -31,17 +31,6 @@ jasypt:
   encryptor:
     bean: jasyptStringEncryptor
 
-# spring boot - actuator expose
-management:
-  endpoint:
-    health:
-      show-details: always
-    loggers:
-      enabled: true
-    web:
-      exposure:
-        include: health,prometheus,loggers,metrics,caches
-
 jwt:
   secret: edujwt
 

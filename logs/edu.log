@@ -1,51 +1,170 @@
-edu12-4 08:48:42.664 INFO  com.kt.edu.thirdproject.ThirdprojectApplication : - Starting ThirdprojectApplication using Java 17.0.2 on jake-MacBookAir.local with PID 91985 (/Users/jakelee/Downloads/edu12-4/target/classes started by jakelee in /Users/jakelee/Downloads/edu12-4) 
-edu12-4 08:48:42.666 DEBUG com.kt.edu.thirdproject.ThirdprojectApplication : - Running with Spring Boot v2.6.3, Spring v5.3.15 
-edu12-4 08:48:42.667 INFO  com.kt.edu.thirdproject.ThirdprojectApplication : - The following profiles are active: local 
-edu12-4 08:48:42.681 INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
-edu12-4 08:48:42.681 INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
-edu12-4 08:48:43.063 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : - Bootstrapping Spring Data JDBC repositories in DEFAULT mode. 
-edu12-4 08:48:43.079 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : - Finished Spring Data repository scanning in 14 ms. Found 1 JDBC repository interfaces. 
-edu12-4 08:48:43.158 INFO  com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor : - Post-processing PropertySource instances 
-edu12-4 08:48:43.180 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy 
-edu12-4 08:48:43.180 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper 
-edu12-4 08:48:43.180 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper 
-edu12-4 08:48:43.180 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper 
-edu12-4 08:48:43.181 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper 
-edu12-4 08:48:43.181 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper 
-edu12-4 08:48:43.181 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource Config resource 'class path resource [application-local.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper 
-edu12-4 08:48:43.181 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper 
-edu12-4 08:48:43.181 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource devtools [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper 
-edu12-4 08:48:43.190 INFO  com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter : - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter 
-edu12-4 08:48:43.262 INFO  com.ulisesbocchio.jasyptspringboot.resolver.DefaultLazyPropertyResolver : - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver 
-edu12-4 08:48:43.263 INFO  com.ulisesbocchio.jasyptspringboot.detector.DefaultLazyPropertyDetector : - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector 
-edu12-4 08:48:43.346 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : - Tomcat initialized with port(s): 8080 (http) 
-edu12-4 08:48:43.352 INFO  org.apache.coyote.http11.Http11NioProtocol : - Initializing ProtocolHandler ["http-nio-8080"] 
-edu12-4 08:48:43.353 INFO  org.apache.catalina.core.StandardService : - Starting service [Tomcat] 
-edu12-4 08:48:43.353 INFO  org.apache.catalina.core.StandardEngine : - Starting Servlet engine: [Apache Tomcat/9.0.56] 
-edu12-4 08:48:43.381 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : - Initializing Spring embedded WebApplicationContext 
-edu12-4 08:48:43.381 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : - Root WebApplicationContext: initialization completed in 699 ms 
-edu12-4 08:48:43.427 INFO  com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor : - Found Custom Encryptor Bean org.jasypt.encryption.pbe.StandardPBEStringEncryptor@2079f203 with name: jasyptStringEncryptor 
-edu12-4 08:48:43.455 INFO  com.zaxxer.hikari.HikariDataSource : - hikari-cp - Starting... 
-edu12-4 08:48:43.503 INFO  com.zaxxer.hikari.HikariDataSource : - hikari-cp - Start completed. 
-edu12-4 08:48:43.507 INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration : - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb' 
-edu12-4 08:48:43.617 DEBUG com.kt.edu.thirdproject.common.config.JwtRequestFilter : - Filter 'jwtRequestFilter' configured for use 
-edu12-4 08:48:43.680 INFO  jdbc.sqltiming : - create sequence hibernate_sequence\n {executed in 1 msec} 
-edu12-4 08:48:43.681 INFO  jdbc.sqltiming : - create table employee ( id long not null, empName varchar(255), empDeptName varchar(255), empTelNo varchar(20), empMail varchar(25) )\n {executed in 1 msec} 
-edu12-4 08:48:43.682 INFO  jdbc.sqltiming : - alter table employee add constraint employee_pk primary key (id)\n {executed in 1 msec} 
-edu12-4 08:48:43.755 INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : - LiveReload server is running on port 35729 
-edu12-4 08:48:43.821 INFO  org.springframework.security.web.DefaultSecurityFilterChain : - Will secure Ant [pattern='/resources/**'] with [] 
-edu12-4 08:48:43.821 INFO  org.springframework.security.web.DefaultSecurityFilterChain : - Will secure Ant [pattern='/css/**'] with [] 
-edu12-4 08:48:43.821 INFO  org.springframework.security.web.DefaultSecurityFilterChain : - Will secure Ant [pattern='/vendor/**'] with [] 
-edu12-4 08:48:43.821 INFO  org.springframework.security.web.DefaultSecurityFilterChain : - Will secure Ant [pattern='/js/**'] with [] 
-edu12-4 08:48:43.821 INFO  org.springframework.security.web.DefaultSecurityFilterChain : - Will secure Ant [pattern='/favicon*/**'] with [] 
-edu12-4 08:48:43.821 INFO  org.springframework.security.web.DefaultSecurityFilterChain : - Will secure Ant [pattern='/img/**'] with [] 
-edu12-4 08:48:43.840 INFO  org.springframework.security.web.DefaultSecurityFilterChain : - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1109f5d1, org.springframework.security.web.context.SecurityContextPersistenceFilter@43535b00, org.springframework.security.web.header.HeaderWriterFilter@7e1b62da, org.springframework.web.filter.CorsFilter@4f32ed7, org.springframework.security.web.authentication.logout.LogoutFilter@7bba1db8, com.kt.edu.thirdproject.common.config.JwtRequestFilter@218580c2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@358ef5a1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@338cce1d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@31beaf18, org.springframework.security.web.session.SessionManagementFilter@48c0ec6e, org.springframework.security.web.access.ExceptionTranslationFilter@2e2e8158, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@681fbe11] 
-edu12-4 08:48:44.216 INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver : - Exposing 1 endpoint(s) beneath base path '/actuator' 
-edu12-4 08:48:44.244 INFO  org.apache.coyote.http11.Http11NioProtocol : - Starting ProtocolHandler ["http-nio-8080"] 
-edu12-4 08:48:44.255 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : - Tomcat started on port(s): 8080 (http) with context path '' 
-edu12-4 08:48:44.263 INFO  com.kt.edu.thirdproject.ThirdprojectApplication : - Started ThirdprojectApplication in 1.718 seconds (JVM running for 2.068) 
-edu12-4 08:48:44.436 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : - Initializing Spring DispatcherServlet 'dispatcherServlet' 
-edu12-4 08:48:44.436 INFO  org.springframework.web.servlet.DispatcherServlet : - Initializing Servlet 'dispatcherServlet' 
-edu12-4 08:48:44.437 INFO  org.springframework.web.servlet.DispatcherServlet : - Completed initialization in 1 ms 
-edu12-4 08:48:46.402 INFO  com.zaxxer.hikari.HikariDataSource : - hikari-cp - Shutdown initiated... 
-edu12-4 08:48:46.403 INFO  com.zaxxer.hikari.HikariDataSource : - hikari-cp - Shutdown completed. 
+edu12-4 15:20:25.659 INFO  com.kt.edu.thirdproject.ThirdprojectApplication : - Starting ThirdprojectApplication using Java 17.0.2 on jake-MacBookAir.local with PID 84138 (/Users/jakelee/Downloads/edu12-4/target/classes started by jakelee in /Users/jakelee/Downloads/edu12-4) 
+edu12-4 15:20:25.662 DEBUG com.kt.edu.thirdproject.ThirdprojectApplication : - Running with Spring Boot v2.6.3, Spring v5.3.15 
+edu12-4 15:20:25.662 INFO  com.kt.edu.thirdproject.ThirdprojectApplication : - The following profiles are active: local 
+edu12-4 15:20:25.677 INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+edu12-4 15:20:25.677 INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor : - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+edu12-4 15:20:26.112 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : - Bootstrapping Spring Data JDBC repositories in DEFAULT mode. 
+edu12-4 15:20:26.125 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : - Finished Spring Data repository scanning in 12 ms. Found 1 JDBC repository interfaces. 
+edu12-4 15:20:26.201 INFO  com.ulisesbocchio.jasyptspringboot.configuration.EnableEncryptablePropertiesBeanFactoryPostProcessor : - Post-processing PropertySource instances 
+edu12-4 15:20:26.225 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy 
+edu12-4 15:20:26.225 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper 
+edu12-4 15:20:26.225 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper 
+edu12-4 15:20:26.225 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper 
+edu12-4 15:20:26.225 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper 
+edu12-4 15:20:26.226 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper 
+edu12-4 15:20:26.226 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource Config resource 'class path resource [application-local.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper 
+edu12-4 15:20:26.226 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper 
+edu12-4 15:20:26.226 INFO  com.ulisesbocchio.jasyptspringboot.EncryptablePropertySourceConverter : - Converting PropertySource devtools [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper 
+edu12-4 15:20:26.239 INFO  com.ulisesbocchio.jasyptspringboot.filter.DefaultLazyPropertyFilter : - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter 
+edu12-4 15:20:26.312 INFO  com.ulisesbocchio.jasyptspringboot.resolver.DefaultLazyPropertyResolver : - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver 
+edu12-4 15:20:26.313 INFO  com.ulisesbocchio.jasyptspringboot.detector.DefaultLazyPropertyDetector : - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector 
+edu12-4 15:20:26.394 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : - Tomcat initialized with port(s): 8080 (http) 
+edu12-4 15:20:26.397 INFO  org.apache.coyote.http11.Http11NioProtocol : - Initializing ProtocolHandler ["http-nio-8080"] 
+edu12-4 15:20:26.397 INFO  org.apache.catalina.core.StandardService : - Starting service [Tomcat] 
+edu12-4 15:20:26.398 INFO  org.apache.catalina.core.StandardEngine : - Starting Servlet engine: [Apache Tomcat/9.0.56] 
+edu12-4 15:20:26.419 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : - Initializing Spring embedded WebApplicationContext 
+edu12-4 15:20:26.419 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : - Root WebApplicationContext: initialization completed in 742 ms 
+edu12-4 15:20:26.479 INFO  com.ulisesbocchio.jasyptspringboot.encryptor.DefaultLazyEncryptor : - Found Custom Encryptor Bean org.jasypt.encryption.pbe.StandardPBEStringEncryptor@6ac23a5d with name: jasyptStringEncryptor 
+edu12-4 15:20:26.511 INFO  com.zaxxer.hikari.HikariDataSource : - hikari-cp - Starting... 
+edu12-4 15:20:26.547 INFO  com.zaxxer.hikari.HikariDataSource : - hikari-cp - Start completed. 
+edu12-4 15:20:26.555 INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration : - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb' 
+edu12-4 15:20:26.662 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - LogFilter init() 
+edu12-4 15:20:26.662 DEBUG com.kt.edu.thirdproject.common.config.JwtRequestFilter : - Filter 'jwtRequestFilter' configured for use 
+edu12-4 15:20:26.685 INFO  jdbc.sqltiming : - create sequence hibernate_sequence\n {executed in 0 msec} 
+edu12-4 15:20:26.687 INFO  jdbc.sqltiming : - create table employee ( id long not null, empName varchar(255), empDeptName varchar(255), empTelNo varchar(20), empMail varchar(25) )\n {executed in 1 msec} 
+edu12-4 15:20:26.688 INFO  jdbc.sqltiming : - alter table employee add constraint employee_pk primary key (id)\n {executed in 1 msec} 
+edu12-4 15:20:26.769 INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer : - LiveReload server is running on port 35729 
+edu12-4 15:20:26.829 INFO  org.springframework.security.web.DefaultSecurityFilterChain : - Will secure Ant [pattern='/resources/**'] with [] 
+edu12-4 15:20:26.829 INFO  org.springframework.security.web.DefaultSecurityFilterChain : - Will secure Ant [pattern='/css/**'] with [] 
+edu12-4 15:20:26.829 INFO  org.springframework.security.web.DefaultSecurityFilterChain : - Will secure Ant [pattern='/vendor/**'] with [] 
+edu12-4 15:20:26.829 INFO  org.springframework.security.web.DefaultSecurityFilterChain : - Will secure Ant [pattern='/js/**'] with [] 
+edu12-4 15:20:26.829 INFO  org.springframework.security.web.DefaultSecurityFilterChain : - Will secure Ant [pattern='/favicon*/**'] with [] 
+edu12-4 15:20:26.829 INFO  org.springframework.security.web.DefaultSecurityFilterChain : - Will secure Ant [pattern='/img/**'] with [] 
+edu12-4 15:20:26.853 INFO  org.springframework.security.web.DefaultSecurityFilterChain : - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4a5e9e92, org.springframework.security.web.context.SecurityContextPersistenceFilter@b97bfe9, org.springframework.security.web.header.HeaderWriterFilter@ca4105c, org.springframework.web.filter.CorsFilter@199cec70, org.springframework.security.web.authentication.logout.LogoutFilter@39dd9185, com.kt.edu.thirdproject.common.config.JwtRequestFilter@e097968, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@23988169, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@216b9c38, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@76f0cb18, org.springframework.security.web.session.SessionManagementFilter@1c23db12, org.springframework.security.web.access.ExceptionTranslationFilter@337853c6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@48836253] 
+edu12-4 15:20:27.255 INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver : - Exposing 6 endpoint(s) beneath base path '/actuator' 
+edu12-4 15:20:27.283 INFO  org.apache.coyote.http11.Http11NioProtocol : - Starting ProtocolHandler ["http-nio-8080"] 
+edu12-4 15:20:27.290 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer : - Tomcat started on port(s): 8080 (http) with context path '' 
+edu12-4 15:20:27.299 INFO  com.kt.edu.thirdproject.ThirdprojectApplication : - Started ThirdprojectApplication in 1.761 seconds (JVM running for 2.121) 
+edu12-4 15:20:27.417 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] : - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+edu12-4 15:20:27.417 INFO  org.springframework.web.servlet.DispatcherServlet : - Initializing Servlet 'dispatcherServlet' 
+edu12-4 15:20:27.418 INFO  org.springframework.web.servlet.DispatcherServlet : - Completed initialization in 1 ms 
+edu12-4 15:21:26.663 INFO  com.kt.edu.thirdproject.common.config.JwtRequestFilter : - JWT Start 
+edu12-4 15:21:26.681 DEBUG com.kt.edu.thirdproject.common.config.JwtRequestFilter : - UserName:edu Token expiration = 2024-08-14T23:12:45.000+0900 
+edu12-4 15:21:26.685 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [/api/login] LogFilter doFilter Start 
+edu12-4 15:21:26.685 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Headers 
+edu12-4 15:21:26.686 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - host = localhost:8080 
+edu12-4 15:21:26.686 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - connection = keep-alive 
+edu12-4 15:21:26.686 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - content-length = 39 
+edu12-4 15:21:26.686 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - pragma = no-cache 
+edu12-4 15:21:26.686 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - cache-control = no-cache 
+edu12-4 15:21:26.686 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua = "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120" 
+edu12-4 15:21:26.686 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - content-type = application/json 
+edu12-4 15:21:26.686 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua-mobile = ?0 
+edu12-4 15:21:26.686 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - authorization = Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJlZHUiLCJleHAiOjE3MjM2NDQ3NjUsImlhdCI6MTcwNTY0NDc2NX0.u9iUQFublbdjqi2dzAS49ypOxp9rNetqktick_X2HvUnjKdrA_GywOJC1zpTXapLrvgMcd6BWCzZEKHLYp5F3Q 
+edu12-4 15:21:26.686 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - user-agent = Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 
+edu12-4 15:21:26.686 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua-platform = "macOS" 
+edu12-4 15:21:26.686 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept = */* 
+edu12-4 15:21:26.686 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - origin = http://localhost:5173 
+edu12-4 15:21:26.686 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-site = same-site 
+edu12-4 15:21:26.686 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-mode = cors 
+edu12-4 15:21:26.686 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-dest = empty 
+edu12-4 15:21:26.686 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - referer = http://localhost:5173/ 
+edu12-4 15:21:26.686 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept-encoding = gzip, deflate, br 
+edu12-4 15:21:26.686 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept-language = en-US,en;q=0.9,ko;q=0.8,zh-CN;q=0.7,zh;q=0.6 
+edu12-4 15:21:26.686 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Parameters 
+edu12-4 15:21:26.686 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Row data 
+edu12-4 15:21:26.687 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [{"username":"edu","password":"edu1234"}] LogFilter doFilter Body 
+edu12-4 15:21:26.720 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [/api/login] LogFilter doFilter End 
+edu12-4 15:21:26.853 INFO  com.kt.edu.thirdproject.common.config.JwtRequestFilter : - JWT Start 
+edu12-4 15:21:26.854 DEBUG com.kt.edu.thirdproject.common.config.JwtRequestFilter : - UserName:edu Token expiration = 2024-08-14T23:21:26.000+0900 
+edu12-4 15:21:26.855 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [/api/v1/employees] LogFilter doFilter Start 
+edu12-4 15:21:26.855 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Headers 
+edu12-4 15:21:26.856 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - host = localhost:8080 
+edu12-4 15:21:26.856 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - connection = keep-alive 
+edu12-4 15:21:26.856 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - pragma = no-cache 
+edu12-4 15:21:26.856 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - cache-control = no-cache 
+edu12-4 15:21:26.856 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua = "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120" 
+edu12-4 15:21:26.856 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua-mobile = ?0 
+edu12-4 15:21:26.856 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - authorization = Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJlZHUiLCJleHAiOjE3MjM2NDUyODYsImlhdCI6MTcwNTY0NTI4Nn0.0FNavw32mP4yBMslw_Utu4qABv78WJtApJC5GrGI6vpcDG768XK6onqcL-8w5OVsQ_n8zmk06mUj8xPt6osarA 
+edu12-4 15:21:26.856 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - user-agent = Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 
+edu12-4 15:21:26.856 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua-platform = "macOS" 
+edu12-4 15:21:26.856 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept = */* 
+edu12-4 15:21:26.856 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - origin = http://localhost:5173 
+edu12-4 15:21:26.856 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-site = same-site 
+edu12-4 15:21:26.856 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-mode = cors 
+edu12-4 15:21:26.856 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-dest = empty 
+edu12-4 15:21:26.856 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - referer = http://localhost:5173/ 
+edu12-4 15:21:26.856 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept-encoding = gzip, deflate, br 
+edu12-4 15:21:26.856 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept-language = en-US,en;q=0.9,ko;q=0.8,zh-CN;q=0.7,zh;q=0.6 
+edu12-4 15:21:26.856 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Parameters 
+edu12-4 15:21:26.856 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Row data 
+edu12-4 15:21:26.867 INFO  com.kt.edu.thirdproject.employee.service.EmployeeService : - Request to get all Employees 
+edu12-4 15:21:26.867 INFO  com.kt.edu.thirdproject.employee.service.EmployeeService : - h2 password : caravan 
+edu12-4 15:21:26.903 INFO  jdbc.sqltiming : - SELECT "EMPLOYEE"."ID" AS "ID", "EMPLOYEE"."EMPNAME" AS "EMPNAME", "EMPLOYEE"."EMPMAIL" AS "EMPMAIL", "EMPLOYEE"."EMPTELNO" AS "EMPTELNO", "EMPLOYEE"."EMPDEPTNAME" AS "EMPDEPTNAME" FROM "EMPLOYEE"\n {executed in 3 msec} 
+edu12-4 15:21:26.908 INFO  jdbc.resultsettable : - \n|---|--------|--------|---------|------------|\n|id |empname |empmail |emptelno |empdeptname |\n|---|--------|--------|---------|------------|\n|---|--------|--------|---------|------------|\n 
+edu12-4 15:21:26.921 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [/api/v1/employees] LogFilter doFilter End 
+edu12-4 15:21:33.163 INFO  com.kt.edu.thirdproject.common.config.JwtRequestFilter : - JWT Start 
+edu12-4 15:21:33.165 DEBUG com.kt.edu.thirdproject.common.config.JwtRequestFilter : - UserName:edu Token expiration = 2024-08-14T23:21:26.000+0900 
+edu12-4 15:21:33.167 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [/api/v1/employees] LogFilter doFilter Start 
+edu12-4 15:21:33.167 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Headers 
+edu12-4 15:21:33.167 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - host = localhost:8080 
+edu12-4 15:21:33.167 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - connection = keep-alive 
+edu12-4 15:21:33.167 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - content-length = 62 
+edu12-4 15:21:33.167 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - pragma = no-cache 
+edu12-4 15:21:33.168 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - cache-control = no-cache 
+edu12-4 15:21:33.168 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua = "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120" 
+edu12-4 15:21:33.168 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - content-type = application/json 
+edu12-4 15:21:33.168 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua-mobile = ?0 
+edu12-4 15:21:33.168 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - authorization = Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJlZHUiLCJleHAiOjE3MjM2NDUyODYsImlhdCI6MTcwNTY0NTI4Nn0.0FNavw32mP4yBMslw_Utu4qABv78WJtApJC5GrGI6vpcDG768XK6onqcL-8w5OVsQ_n8zmk06mUj8xPt6osarA 
+edu12-4 15:21:33.168 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - user-agent = Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 
+edu12-4 15:21:33.168 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua-platform = "macOS" 
+edu12-4 15:21:33.168 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept = */* 
+edu12-4 15:21:33.168 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - origin = http://localhost:5173 
+edu12-4 15:21:33.168 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-site = same-site 
+edu12-4 15:21:33.168 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-mode = cors 
+edu12-4 15:21:33.168 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-dest = empty 
+edu12-4 15:21:33.168 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - referer = http://localhost:5173/ 
+edu12-4 15:21:33.169 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept-encoding = gzip, deflate, br 
+edu12-4 15:21:33.169 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept-language = en-US,en;q=0.9,ko;q=0.8,zh-CN;q=0.7,zh;q=0.6 
+edu12-4 15:21:33.169 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Parameters 
+edu12-4 15:21:33.169 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Row data 
+edu12-4 15:21:33.169 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [{"empName":"1","empDeptName":"1","empTelNo":"1","empMail":"1"}] LogFilter doFilter Body 
+edu12-4 15:21:33.179 INFO  com.kt.edu.thirdproject.employee.service.EmployeeService : - Request to create Employee : EmployeeEntity(id=null, empName=1, empDeptName=1, empTelNo=1, empMail=1, isNew=false) 
+edu12-4 15:21:33.187 INFO  jdbc.sqltiming : - select nextval ('hibernate_sequence');\n {executed in 1 msec} 
+edu12-4 15:21:33.187 INFO  jdbc.resultsettable : - \n|------------------------------|\n|nextval('hibernate_sequence') |\n|------------------------------|\n|1                             |\n|------------------------------|\n 
+edu12-4 15:21:33.208 INFO  jdbc.sqltiming : - INSERT INTO "EMPLOYEE" ("EMPDEPTNAME", "EMPMAIL", "EMPNAME", "EMPTELNO", "ID") VALUES ('1', '1', '1', '1', 1)\n {executed in 0 msec} 
+edu12-4 15:21:33.216 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [/api/v1/employees] LogFilter doFilter End 
+edu12-4 15:21:38.664 INFO  com.kt.edu.thirdproject.common.config.JwtRequestFilter : - JWT Start 
+edu12-4 15:21:38.666 DEBUG com.kt.edu.thirdproject.common.config.JwtRequestFilter : - UserName:edu Token expiration = 2024-08-14T23:21:26.000+0900 
+edu12-4 15:21:38.669 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [/api/v1/employee/1] LogFilter doFilter Start 
+edu12-4 15:21:38.669 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Headers 
+edu12-4 15:21:38.669 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - host = localhost:8080 
+edu12-4 15:21:38.669 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - connection = keep-alive 
+edu12-4 15:21:38.669 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - content-length = 69 
+edu12-4 15:21:38.669 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - pragma = no-cache 
+edu12-4 15:21:38.669 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - cache-control = no-cache 
+edu12-4 15:21:38.669 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua = "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120" 
+edu12-4 15:21:38.669 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - content-type = application/json 
+edu12-4 15:21:38.669 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua-mobile = ?0 
+edu12-4 15:21:38.669 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - authorization = Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJlZHUiLCJleHAiOjE3MjM2NDUyODYsImlhdCI6MTcwNTY0NTI4Nn0.0FNavw32mP4yBMslw_Utu4qABv78WJtApJC5GrGI6vpcDG768XK6onqcL-8w5OVsQ_n8zmk06mUj8xPt6osarA 
+edu12-4 15:21:38.669 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - user-agent = Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 
+edu12-4 15:21:38.669 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-ch-ua-platform = "macOS" 
+edu12-4 15:21:38.670 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept = */* 
+edu12-4 15:21:38.670 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - origin = http://localhost:5173 
+edu12-4 15:21:38.670 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-site = same-site 
+edu12-4 15:21:38.670 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-mode = cors 
+edu12-4 15:21:38.670 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - sec-fetch-dest = empty 
+edu12-4 15:21:38.670 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - referer = http://localhost:5173/ 
+edu12-4 15:21:38.670 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept-encoding = gzip, deflate, br 
+edu12-4 15:21:38.670 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - accept-language = en-US,en;q=0.9,ko;q=0.8,zh-CN;q=0.7,zh;q=0.6 
+edu12-4 15:21:38.670 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Parameters 
+edu12-4 15:21:38.670 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : -  Row data 
+edu12-4 15:21:38.670 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [{"id":1,"empName":"1","empDeptName":"2","empTelNo":"1","empMail":"1"}] LogFilter doFilter Body 
+edu12-4 15:21:38.675 INFO  com.kt.edu.thirdproject.employee.service.EmployeeService : - Request to update Employee : EmployeeEntity(id=1, empName=1, empDeptName=2, empTelNo=1, empMail=1, isNew=false) 
+edu12-4 15:21:38.682 INFO  jdbc.sqltiming : - SELECT "EMPLOYEE"."ID" AS "ID", "EMPLOYEE"."EMPNAME" AS "EMPNAME", "EMPLOYEE"."EMPMAIL" AS "EMPMAIL", "EMPLOYEE"."EMPTELNO" AS "EMPTELNO", "EMPLOYEE"."EMPDEPTNAME" AS "EMPDEPTNAME" FROM "EMPLOYEE" WHERE "EMPLOYEE"."ID" = 1\n {executed in 1 msec} 
+edu12-4 15:21:38.687 INFO  jdbc.resultsettable : - \n|---|--------|--------|---------|------------|\n|id |empname |empmail |emptelno |empdeptname |\n|---|--------|--------|---------|------------|\n|1  |1       |1       |1        |1           |\n|---|--------|--------|---------|------------|\n 
+edu12-4 15:21:38.695 INFO  jdbc.sqltiming : - UPDATE "EMPLOYEE" SET "EMPNAME" = '1', "EMPDEPTNAME" = '2', "EMPTELNO" = '1', "EMPMAIL" = '1' WHERE "EMPLOYEE"."ID" = 1\n {executed in 1 msec} 
+edu12-4 15:21:38.697 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - [/api/v1/employee/1] LogFilter doFilter End 
+edu12-4 15:22:11.364 INFO  com.kt.edu.thirdproject.common.filter.LogFilter : - LogFilter destroy() 
+edu12-4 15:22:11.372 INFO  com.zaxxer.hikari.HikariDataSource : - hikari-cp - Shutdown initiated... 
+edu12-4 15:22:11.375 INFO  com.zaxxer.hikari.HikariDataSource : - hikari-cp - Shutdown completed. 

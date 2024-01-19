@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.client.RestTemplate;
 
 import java.time.Duration;
 import java.util.ArrayList;
@@ -26,8 +25,12 @@ public class EmployeeService {
     @Value("${spring.datasource.password}")
     private String h2Password;
 
+    // spring profile
+    @Value("${spring.profiles.active}")
+    private String activeProfile;
+
     @Autowired
-    public EmployeeService(RestTemplateBuilder restTemplateBuilder, EmployeeRepository employeeRepository){
+    public EmployeeService(EmployeeRepository employeeRepository){
         this.employeeRepository = employeeRepository;
 
     }
@@ -48,7 +51,14 @@ public class EmployeeService {
 
     public EmployeeEntity create(EmployeeEntity employeeEntity) {
         log.info("Request to create Employee : " +  employeeEntity);
-        employeeEntity.setId(employeeRepository.retvNextVal());
+
+        if (activeProfile.equals("prd")){ // maria, mysql
+            employeeEntity.setId(employeeRepository.retvNextVal());
+         } else { // h2 db
+            employeeEntity.setId(employeeRepository.retvNextVal_H2());;
+         }
+
+        //employeeEntity.setId(employeeRepository.retvNextVal());
         employeeEntity.setNew(true);
         return this.employeeRepository.save(employeeEntity);
     }

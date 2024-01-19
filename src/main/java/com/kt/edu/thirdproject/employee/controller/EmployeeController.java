@@ -14,11 +14,10 @@ import java.util.List;
 @RestController
 @RequiredArgsConstructor
 @CrossOrigin(origins ="*")
-@RequestMapping("/api/v1/")
+@RequestMapping("/api/v1")
 public class EmployeeController {
 
     private final EmployeeService employeeService;
-
 
     //@Cacheable(cacheNames = "employee")
     @GetMapping("/employees")
@@ -40,14 +39,14 @@ public class EmployeeController {
         return ResponseEntity.ok(createdEntity);
     }
 
-    @PostMapping("/employees/{id}")
+    @PostMapping("/employee/{id}")
     @Operation(summary ="임직원 수정",description="임직원 정보를  수정합니다.")
     public ResponseEntity<EmployeeEntity> update(@PathVariable Long id, @RequestBody EmployeeEntity employeeEntity) {
         EmployeeEntity updatedEntity = employeeService.update(id,employeeEntity);
         return ResponseEntity.ok(updatedEntity);
     }
 
-    @PostMapping("/employee/{id}")
+    @PostMapping("/employees/{id}")
     @Operation(summary ="임직원 정보 삭제",description="임직원 정보를 삭제합니다.")
     public ResponseEntity<EmployeeEntity> delete(@PathVariable Long id) {
         EmployeeEntity deletedEntity = employeeService.delete(id);

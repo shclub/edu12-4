@@ -17,7 +17,9 @@ RUN mvn package
 #
 # production environment
 
-FROM eclipse-temurin:17.0.2_8-jre-alpine
+
+#FROM eclipse-temurin:17.0.2_8-jre-alpine
+FROM shclub/jre17-runtime:v1.0.0
 
 COPY --from=MAVEN_BUILD /build/target/*.jar app.jar
 
